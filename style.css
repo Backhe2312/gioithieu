@@ -19,6 +19,8 @@ img {
  width: 120px;
  height: 120px;
 margin-left: 10px;
+	background-position: center;
+background-size: cover;
 }
 header {
 	margin-top: 1em;
