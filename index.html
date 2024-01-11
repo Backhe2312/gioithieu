@@ -44,6 +44,26 @@
 	</main>
 	<p>Học Học Nữa Học Mãi</P>
 		
+<!-- Đoạn mã HTML để tạo menu -->
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+<ul id="menu">
+  <li><a href="#home">Trang chủ</a></li>
+  <li><a href="#news">Tin tức</a></li>
+  <li><a href="#contact">Liên hệ</a></li>
+  <li><a href="#about">Giới thiệu</a></li>
+</ul>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "none") {
+    menu.style.display = "block"; // Hiển thị menu khi nhấn vào biểu tượng
+  } else {
+    menu.style.display = "none"; // Ẩn menu khi nhấn vào biểu tượng lần thứ 2
+  }
+}
+</script>
+
 	
 </body>
 </html>
