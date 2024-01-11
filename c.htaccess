@@ -1,7 +1,7 @@
    <Files "README.md">
        Order allow,deny
        Deny from all
-Options -Indexes
+
    </Files>
 
    
