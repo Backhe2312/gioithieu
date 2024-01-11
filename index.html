@@ -44,13 +44,58 @@
 	</main>
 	<p>Học Học Nữa Học Mãi</P>
 		
+ <style>
+    /* CSS để tạo menu ngang */
+ 
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      display: none; /* Ẩn menu ban đầu */
+    }
+
+    .gach {
+      float: left;
+    
+    }
+
+    .cn {
+      display: block;
+      color: white;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #111;
+    }
+
+    /* CSS để tạo biểu tượng 3 gạch */
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      color: blue;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 30px;
+      border-radius: 50px;
+   
+    }
+  </style>
+</head>
+<body>
+
 <!-- Đoạn mã HTML để tạo menu -->
 <div class="menu-icon" onclick="toggleMenu()">☰</div>
 <ul id="menu">
-  <li><a href="#home">Trang chủ</a></li>
-  <li><a href="#news">Tin tức</a></li>
-  <li><a href="#contact">Liên hệ</a></li>
-  <li><a href="#about">Giới thiệu</a></li>
+  <li class="gach"><a class="cn"href="#home">Trang chủ</a></li>
+  <li class="gach"><a class="cn"href="#news">Tin tức</a></li>
+  <li class="gach"><a class="cn"href="#contact">Liên hệ</a></li>
+  <li class="gach"><a class="cn"href="#about">Giới thiệu</a></li>
 </ul>
 
 <script>
@@ -63,6 +108,7 @@ function toggleMenu() {
   }
 }
 </script>
+
 
 	
 </body>
