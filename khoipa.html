@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Canh giữa theo chiều dọc */
+    background: linear-gradient(blue, red);
+  }
+
+  .item-container {
+    position: relative;
+    margin-bottom: 20px; /* Khoảng cách giữa các phần tử */
+  }
+
+  .item-container h3 {
+    text-align: center;
+  }
+
+  img {
+    border: 2px solid black;
+    max-width: 15%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  a {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    position: absolute;
+    left: 38%;
+    top: 90%;
+    background-color: green;
+    border-color: green;
+  }
+
+  hr {
+    width: 50%; /* Điều chỉnh độ rộng theo nhu cầu */
+  }
+</style>
+<title>Example Page</title>
+</head>
+<body>
+  <div class="item-container">
+    <h3>Lien</h3>
+    <img src="https://backhe2312.github.io/gioithieu/img/logo.jpg" alt="Mô tả ảnh">
+        <li style="position: absolute;top: 30%;right: 50%">Hack Map</li>
+            <li style="position: absolute;top: 44%;right: 50%">Hack Map</li>
+    <a href="#">Liên kết có viền</a>
+  </div>
+  <hr>
+  <div class="item-container">
+    <h3>Lien</h3>
+    <img src="https://backhe2312.github.io/gioithieu/img/logo.jpg" alt="Mô tả ảnh">
+    <li style="position: absolute;top: 30%;right: 50%">Hack Map</li>
+    <a href="#">Liên kết có viền</a>
+  </div>
+  <hr>
+  <div class="item-container">
+    <h3>Lien</h3>
+    <img src="https://backhe2312.github.io/gioithieu/img/logo.jpg" alt="Mô tả ảnh">
+    <a href="#">Liên kết có viền</a>
+  </div>
+</body>
+</html>
