@@ -7,7 +7,7 @@ $(function(){
     ShowToast();
     __GetIP();
     __GetInfo();
-    console.log("%c🌳 Name：ThanhDieuTv | Bio：Sayy Hello | Url：https://www.thanhdieu.com 🌳", "font-family: ;color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
+    console.log("%c🌳 🌳", "font-family: ;color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
     console.log("…………./´¯/)……….. (\\¯’\\\n…………/….//……….. …\\\\….\\\n………../….//………… ….\\\\….\\\n…../´¯/…./´¯\\\\………../¯‘\\\\…./¯’\\\\\n.././…/…./…./.|_|……_| .\\\\…\\\\…\\\\…\\\\.\\\\\n(.(….(….(…./.)..)..(..(. \\\\….)….)….).)\n.\\\\…………….\\/…/…\\\\. ..\\/……………./\n..\\\\…………….. /……..\\\\………………../\n…\\\\…………..(………. ..)……………./");
   });
 // CHECK FPS
@@ -26,27 +26,14 @@ function CheckFps() {
 }
 // TIEU SU CHỮ CHẠY
 let typed=new Typed(".GioiThieu", {
-  strings: ["","Hey brother, I'm a Designer.", "I like website design =]] "],
+  strings: ["","Welcome To My Website😍", "North IOS Website Is Pleased To Welcome You🇻🇳" ],
   typeSpeed: 95,
   backSpeed: 75,
   loop: true
 })
 // MUSIC PLAY
-const MusicList=[
-    "//thanhdieu.com/files/Em-Nào-Có-Tội.mp3",
-    "//thanhdieu.com/files/Anh-Đã-Quen-Với-Cô-Đơn.mp3",
-    "//thanhdieu.com/files/Về-Bên-Anh.mp3",
-];
-let t=parseInt(localStorage.getItem('td')) || Math.floor(Math.random() * MusicList.length);
-const audio=new Audio(MusicList[t]);
-function MusicPlay() {audio.play();}
-document.addEventListener('click', MusicPlay);
-audio.addEventListener("ended", function() {
-t=(t + 1) % MusicList.length;
-localStorage.setItem('td', t);
-audio.src=MusicList[t];
-audio.play();
-});
+
+
 // LOADER SCREEN ----------
 let spin=document.querySelector('.LoaderCover');
 window.addEventListener('load', () => {
@@ -68,27 +55,20 @@ function ShowToast() {
     }
     // SET URL FACEBOOK
     $('#Facebook').click(function() {
-        OpenUrl('https://www.facebook.com/100035052735014');
+        OpenUrl('https://www.facebook.com/bac.trantuan.56?mibextid=sCpJLy');
     });
       // SET URL YOUTUBE
     $('#Youtube').click(function() {
         OpenUrl('https://www.youtube.com/channel/UCiSP9FWliPIwG-w59dJdilQ');
     });
-    // SET URL DISCORDS
-    $('#Discord').click(function() {
-        OpenUrl('https://dsc.bio/WusThanhDieu');
-    });
-      // SET URL INSTAGRAM
-    $('#Instagram').click(function() {
-        OpenUrl('https://instagram.com/vuongsondieu2k2/');
-    });
+  
   });
   
 function Alerts() {
   Swal.fire({
-    title: '𝙉𝙤𝙩𝙞𝙛𝙞𝙘𝙖𝙩𝙞𝙤𝙣 !',
-    text: '=>> 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙃𝙪𝙣𝙣𝙞𝙚 𝙗𝙖𝙘𝙠 𝙩𝙤 𝙩𝙝𝙚 𝙝𝙤𝙢𝙚𝙥𝙖𝙜𝙚 🐬 <<=',
-    showConfirmButton: false
+    title: '⚠️Warning⚠️',
+    text: '=>>Click OK If You Are 18 Years Old<<=',
+    showConfirmButton: true
   });
 }
 // Skill Language
