@@ -11,10 +11,14 @@
 	<div id="message"></div>
 	<script src="thiep.js"></script>
 	<script>
-	  function closeTabAfterDelay() {
-         setTimeout(function() {
-            window.close();
-         }, 5000);
+	  function closePage() {
+        var interval = setInterval(closePageNow, 5000);
+       var result = document.getElementById("result");
+       result.innerHTML = "<b> The page will close after delay of 5 seconds using setInterval() method.";
+     }
+    function closePageNow() {
+       window.close();
+       clearInterval(interval);
     }
 	</script>
 </body>
